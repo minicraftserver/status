@@ -15,6 +15,10 @@ sites:
     ipv6: false
   - name: MiniCraft Webseite
     url: https://minicraft-server.de
+    expectedStatusCodes:
+      - 200
+      - 201
+      - 403
   - name: Mojang Sessionserver
     url: https://sessionserver.mojang.com
     expectedStatusCodes:
