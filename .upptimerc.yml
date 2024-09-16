@@ -1,36 +1,55 @@
 # Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: minicraftserver # Your GitHub organization or username, where this repository lives
+repo: status # The name of this repository
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
+  - name: MiniCraft Server
+    url: sv1xapp01-p.timschneider.info
+    port: 25565
     check: "tcp-ping"
-    ipv6: true
+    ipv6: false
+  - name: MiniCraft TeamSpeak
+    url: sv1xapp01-p.timschneider.info
+    port: 30033
+    check: "tcp-ping"
+    ipv6: false
+  - name: MiniCraft Webseite
+    url: https://minicraft-server.de
+  - name: Mojang Sessionserver
+    url: https://sessionserver.mojang.com
+    expectedStatusCodes:
+      - 200
+      - 201
+      - 403
+      - 404
+  - name: Mojang API Endpoints
+    url: https://api.minecraftservices.com
+    expectedStatusCodes:
+      - 200
+      - 201
+      - 403
+      - 404
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
+  cname: status.minicraft-server.de
   # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  logoUrl: https://minicraft-server.de/images/logo/minicraft/logo.svg
+  name: Minicraft Server Status
+  introTitle: "Eine Statusseite über die Dienste von minicraft-server.de und Mojang"
+  introMessage: Powered by [Upptime](https://github.com/upptime/upptime)
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: Webseite
+      href: https://minicraft-server.de
+    - title: Forum
+      href: https://minicraft-server.de/forum/
+    - title: Twitter
+      href: https://x.com/minicraftserver
+    - title: Livemap
+      href: https://livemap.minicraft-server.de      
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
