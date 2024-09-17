@@ -4,19 +4,19 @@
     "url": "sv1xapp01-p.timschneider.info",
     "icon": "https://icons.duckduckgo.com/ip3/null.ico",
     "slug": "mini-craft-server",
-    "status": "down",
-    "uptime": "99.99%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "99.99%",
-    "uptimeYear": "99.99%",
-    "time": 95,
-    "timeDay": 95,
-    "timeWeek": 95,
-    "timeMonth": 95,
-    "timeYear": 95,
+    "status": "up",
+    "uptime": "96.58%",
+    "uptimeDay": "96.58%",
+    "uptimeWeek": "96.58%",
+    "uptimeMonth": "96.58%",
+    "uptimeYear": "96.58%",
+    "time": 94,
+    "timeDay": 94,
+    "timeWeek": 94,
+    "timeMonth": 94,
+    "timeYear": 94,
     "dailyMinutesDown": {
-      "2024-09-17": 0
+      "2024-09-17": 26
     }
   },
   {
